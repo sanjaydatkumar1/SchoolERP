@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+.dark { color-scheme: dark; }
+body { @apply bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100; }
+* { scrollbar-width: thin; scrollbar-color: #cbd5e1 transparent; }
+.erp-gradient { background: radial-gradient(circle at top left, rgba(38,140,255,.16), transparent 32rem), linear-gradient(135deg, rgba(255,255,255,.92), rgba(248,250,252,.86)); }
+.dark .erp-gradient { background: radial-gradient(circle at top left, rgba(38,140,255,.18), transparent 32rem), linear-gradient(135deg, rgba(15,23,42,.98), rgba(2,6,23,.94)); }
+.print-page { background:white; color:#0f172a; width:210mm; min-height:297mm; margin:auto; padding:12mm; box-shadow:0 12px 50px rgba(2,6,23,.15); }
